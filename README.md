@@ -29,7 +29,9 @@ A front-end based Electronics E-Commerce web application built using HTML, CSS, 
 - wishlist.html / wishlist.js  
 - home.js / homeStyle.css  
 
+---
 
+## ▶️ How to Run
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/electronics-e-commerce-application.git
