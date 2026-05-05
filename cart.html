@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <aside class="logo" >Electronics</aside>
+        <aside class="menu-items">
+            <a href="./home.html">Home</a>
+            <aside class="dropdown-list">
+                <a href="#" onclick="searchCategory('Mobile')">Mobile</a>
+                <a href="#" onclick="searchCategory('Laptop')">Laptops</a>
+                <a href="#" onclick="searchCategory('Watch')">Watches</a>
+            </aside>
+            <a href="">About</a>
+        </aside>
+        <aside class="searchbox">
+            <input type="search" placeholder="search the products" id="searchbox" onkeyup="searchFilter()" >
+        </aside>
+        <aside class="nav-right">
+            <img src="" alt="profile" srcset="" id="profile">
+            <a href="">Wishlist♥️</a>
+            <a href="">Cart🛒</a>
+        </aside>
+    </nav>
+    <section id="products">
+        
+ </section>
+ <section class="details">
+    <h2 id="total"></h2>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkOut()">Check Out</button>
+ </section>
+</body>
+<script src="./cart.js"></script>
+</html>

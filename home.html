@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./homeStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <aside class="logo" >Electronics</aside>
+        <aside class="menu-items">
+            <a href="./home.html">Home</a>
+            <aside class="dropdown-list">
+                <a href="#" onclick="searchCategory('Mobile')">Mobile</a>
+                <a href="#" onclick="searchCategory('Laptop')">Laptops</a>
+                <a href="#" onclick="searchCategory('Watch')">Watches</a>
+            </aside>
+            <a href="">About</a>
+        </aside>
+        <aside class="searchbox">
+            <input type="search" placeholder="search the products" id="searchbox" onkeyup="searchFilter()" >
+        </aside>
+        <aside class="nav-right">
+            <img src="" alt="profile" srcset="" id="profile">
+            <a href="./wishlist.html">Wishlist♥️</a>
+            <a href="./cart.html">Cart🛒</a>
+        </aside>
+    </nav>
+
+    <section class="first-container">
+        <section class="container-content">
+            <h1>
+                Big Billion Days🎊
+            </h1>
+            <p>Flat 50% Offer On All Products</p>
+            <br>
+            <button>Shop Now</button>
+        </section>
+    </section>
+    <!-- second container -->
+    <section class="category">
+        <aside class="cat" onclick="searchCategory('all')">All</aside>
+        <aside class="cat" onclick="searchCategory('Mobile')">Mobile</aside>
+        <aside class="cat" onclick="searchCategory('Laptop')">Laptops</aside>
+        <aside class="cat" onclick="searchCategory('Watch')">Watches</aside>
+    </section>
+<!-- third Container -->
+ <section class="features">
+    <aside>24/7 Support</aside>
+    <aside>Free Delivery</aside>
+    <aside>Cashback</aside>
+    <aside>EMI Option</aside>
+ </section>
+ <section id="products">
+
+ </section>
+</body>
+<script src="./home.js"></script>
+</html>

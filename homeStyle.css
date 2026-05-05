@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+  background: #0f172a;
+  color: #f9fafb;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  border-bottom: 1px solid #1f2937;
+}
+
+/* LOGO */
+.logo {
+  color: #22c55e;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* MENU */
+.menu-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-items a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu-items a:hover {
+  color: #22c55e;
+  text-shadow: 0 0 5px #22c55e;
+}
+
+/* DROPDOWN */
+.dropdown-list {
+  display: flex;
+  gap: 15px;
+}
+
+/* SEARCH */
+.searchbox input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: white;
+  outline: none;
+}
+
+.searchbox input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 5px #38bdf8;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  color: #22c55e;
+}
+
+.nav-right img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #22c55e;
+}
+
+/* HERO SECTION */
+.first-container {
+  background: linear-gradient(135deg, #020617, #0f172a, #111827);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.container-content h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.container-content p {
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.container-content button {
+  background: #f97316;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container-content button:hover {
+  background: #22c55e;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* CATEGORY */
+.category {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}
+
+.cat {
+  background: #111827;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #1f2937;
+  transition: 0.3s;
+}
+
+.cat:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+/* FEATURES */
+.features {
+  margin: 30px;
+  padding: 30px;
+  background: #111827;
+  border-radius: 20px;
+  border: 1px solid #1f2937;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features aside {
+  flex: 1;
+  min-width: 200px;
+  padding: 15px;
+  background: #020617;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.features aside:hover {
+  transform: scale(1.05);
+  border: 1px solid #22c55e;
+  box-shadow: 0 0 10px #22c55e;
+}
+
+/* PRODUCTS */
+#products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+}
+
+/* PRODUCT CARD */
+#products .product-card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: #020617;
+  border: 1px solid #1f2937;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#products .product-card:hover {
+  transform: translateY(-8px);
+  border-color: #22c55e;
+}
+
+/* IMAGE */
+.product-card img {
+  height: 150px;
+  width: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.product-card p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* BUTTONS */
+.product-card button {
+  padding: 6px 12px;
+  border: none;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ADD TO CART */
+.product-card button:first-of-type {
+  background: #22c55e;
+  color: black;
+}
+
+.product-card button:first-of-type:hover {
+  background: #16a34a;
+}
+
+/* BUY NOW */
+.product-card button:last-of-type {
+  background: #38bdf8;
+  color: black;
+}
+
+.product-card button:last-of-type:hover {
+  background: #0ea5e9;
+}
